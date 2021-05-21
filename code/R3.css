@@ -1,0 +1,123 @@
+#footer {
+    text-align: center;
+    background-color: black;
+    margin-top: -1.35em;
+    padding-top: 1em;
+}
+
+.botonVid {
+    width: 100%;
+    height: auto;
+}
+
+.botoncito figure {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.botoncito figure:hover {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "vid desc";
+}
+.vid { grid-area: vid; }
+.desc {
+    grid-area: desc; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.title {
+    font-style: italic;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+.pequena {
+    margin-top: -10px;
+    font-size: 0.9em;
+    text-align: justify;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    color: gray;
+}
+
+/* Large */
+
+@media screen and (max-width: 830px) {
+    .title {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .pequena {
+        margin-top: -15px;
+        text-align: justify;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        color: gray;
+    }
+}
+
+/* Large */
+
+@media screen and (max-width: 830px) {
+    .pequena {
+        margin-top: -15px;
+        font-size: 0.8em;
+        text-align: justify;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        color: gray;
+    }
+} 
+
+/* Small */
+
+@media screen and (max-width: 670px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+      }
+
+    .botonVid {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .desc {
+        margin-bottom: 2em;
+    }
+    
+    .title {
+        font-style: italic;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .pequena {
+        text-align: justify;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+        color: gray;
+    }
+
+
+} 
