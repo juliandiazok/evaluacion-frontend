@@ -53,6 +53,7 @@
     margin-left: 1.5em;
     margin-right: 1.5em;
     color: gray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Large */
@@ -109,7 +110,7 @@
     .title {
         font-style: italic;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1.8em;
         font-weight: bold;
     }
     .pequena {
