@@ -1,0 +1,15 @@
+table, th, td, tr {
+    text-align: left;
+    border: 1px solid gray;
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+table tr:nth-child(odd) {
+ background-color: #fff;
+}
+
+caption {
+  text-align: center;
+}
